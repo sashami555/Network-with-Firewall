@@ -1,7 +1,17 @@
 # Mini Network with Router and Firewall
 
 This project demonstrates how to build a small virtual network using **Ubuntu 18.04** virtual machines in VMware.  
-The goal was to create a simple router with a firewall and two client machines connected to it.
+The goal was to create a simple router with a firewall and two client machines connected to it.  
+
+---
+
+## Network Topology
+
+The overall lab structure is shown below:  
+
+<img width="1132" height="441" alt="Снимок экрана 2025-09-18 164224" src="https://github.com/user-attachments/assets/80605ce3-2b93-4856-b637-a18615f5599c" />
+
+*Figure 1: Mini network with router, two clients, and firewall*
 
 ---
 
@@ -18,7 +28,7 @@ The goal was to create a simple router with a firewall and two client machines c
     - **Host-Only** – to connect local clients
   - Each client had a **Host-Only** adapter and was assigned a static IP address through netplan configuration.
 
---
+---
 
 ## Configuration Steps
 
@@ -29,12 +39,9 @@ The goal was to create a simple router with a firewall and two client machines c
 
    Clients used the router (`192.168.56.131`) as their default gateway.
 
-2. **Enable IP forwarding** on the router:
+   📸 *Example screenshot:* `ip addr show` on the router or a netplan config file.  
+   жжжжж
+
+2. **Enable IP forwarding** on the router:  
    ```bash
    sudo sysctl -w net.ipv4.ip_forward=1
-   
-3. **Configure NAT and Firewall on the router**  
-   NAT was enabled with iptables so that clients could access the internet through the router.  
-   Basic firewall rules were added to experiment with network traffic control, for example:   
-   - Allowing only HTTP/HTTPS connections  
-   - Restricting internet access for specific clients  
