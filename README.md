@@ -39,8 +39,8 @@ The overall lab structure is shown below:
 
    Clients used the router (`192.168.56.131`) as their default gateway.
 
-   📸 *Example screenshot:* `ip addr show` on the router or a netplan config file.  
-   жжжжж
+   <img width="832" height="338" alt="router_ip_show" src="https://github.com/user-attachments/assets/c4f9fccd-fc86-443e-bec3-92e66d2ab42a" />
+
 
 2. **Enable IP forwarding** on the router:  
    ```bash
