@@ -45,3 +45,9 @@ The overall lab structure is shown below:
 2. **Enable IP forwarding** on the router:  
    ```bash
    sudo sysctl -w net.ipv4.ip_forward=1
+3. **Configure NAT and Firewall on the router**
+   
+  NAT was enabled with iptables so that clients could access the internet through the router.
+  Basic firewall rules were added to experiment with network traffic control, for example:
+  - Allowing only HTTP/HTTPS connections
+  - Restricting internet access for specific clients
