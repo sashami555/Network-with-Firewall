@@ -9,7 +9,7 @@ The goal was to create a simple router with a firewall and two client machines c
 
 The overall lab structure is shown below:  
 
-<img width="791" height="311" alt="Schema drawio" src="https://github.com/user-attachments/assets/8f41a556-66f1-45c2-8226-f806e0ca7865" />
+![Schema](https://github.com/user-attachments/assets/cfd808ea-f6c8-4a4c-aea2-bca2fdfcf853)
 
 
 *Figure 1: Mini network with router, two clients, and firewall*
